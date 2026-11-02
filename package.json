@@ -1,0 +1,24 @@
+{
+  "name": "dsh-whale-preset",
+  "version": "1.0.0",
+  "description": "An extra DeepSeek Harness agent preset (whale): a verbatim copy of the shipped standard preset under a different preset name, so plugins that scope themselves by preset name can give one preset its own persona.",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "agent-preset",
+    "cordis-bundle"
+  ],
+  "files": [
+    "cordis.patch.yml",
+    "cordis.patch.billion-context.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
